@@ -19,10 +19,10 @@ class TestUtils(unittest.TestCase):
     if not isinstance(actual,(int,float)):
       explanation = "Return value is not a number"
       msg = self.makeMessage(numList, expected,actual,explanation)
-      testCase.fail(msg)
+      self.fail(msg)
     if abs(expected - actual) > delta:
       msg = self.makeMessage(numList, expected,actual,"Actual and expected return values are not equal")
-      testCase.fail(msg)
+      self.fail(msg)
 
 
   def makeMessage(self, numList, expected,actual,explanation):
