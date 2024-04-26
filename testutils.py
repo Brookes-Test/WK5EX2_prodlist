@@ -25,7 +25,7 @@ class TestUtils(unittest.TestCase):
       testCase.fail(msg)
 
 
-  def makeMessage(self, numlist, expected,actual,explanation):
+  def makeMessage(self, numList, expected,actual,explanation):
     bar ="\n##################################\n"
     msg = bar + "Function call: " + self.callToStr("prodlist", numList) 
     msg += "\nExpected return value: " + repr(expected)
