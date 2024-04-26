@@ -10,7 +10,7 @@ class TestUtils(unittest.TestCase):
   def test2(self):
     self.doTest([3.5],3.5)
 
-  def test3(testCase):
+  def test3(self):
     self.doTest([3,-1.5,1],-4.5)
 
   def doTest(self,numList,expected):
@@ -25,7 +25,7 @@ class TestUtils(unittest.TestCase):
       testCase.fail(msg)
 
 
-  def makeMessage(self, expected,actual,explanation):
+  def makeMessage(self, numlist, expected,actual,explanation):
     bar ="\n##################################\n"
     msg = bar + "Function call: " + self.callToStr("prodlist", numList) 
     msg += "\nExpected return value: " + repr(expected)
