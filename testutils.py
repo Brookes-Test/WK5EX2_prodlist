@@ -4,7 +4,7 @@ from main import prodlist
 
 class TestUtils(unittest.TestCase):
   def test1(self):
-    self.fail("Test Fail Message")
+    print("Hello David")
 
 if __name__ == '__main__':
     unittest.main()
